@@ -1,6 +1,6 @@
 {
-  "homepage": "http://masonmarinko.github.io/photo-port",
-  "name": "photo-port",
+  "homepage": "http://masonmarinko.github.io/masonmarinko-portfolio",
+  "name": "masonmarinko-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

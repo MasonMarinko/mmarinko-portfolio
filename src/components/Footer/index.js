@@ -14,7 +14,7 @@ function Footer() {
       </a>
       <a className="linkedin" target= "_blank" href="https://www.linkedin.com/in/masonmarinko/">
          <img alt="Github Logo" src="https://i.imgur.com/TkR6RBO.png"
-         width="120" height="50"></img>
+         width="170" height="50"></img>
       </a>
       <a className="resume" target= "_blank" href="https://www.twitter.com/crason8">
          <img alt="Github Logo" src="https://i.imgur.com/zCIGqvk.png"

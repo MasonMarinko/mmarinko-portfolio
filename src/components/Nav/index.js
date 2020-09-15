@@ -26,7 +26,7 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="nav-buttons flex-row">
-          <li className="mx-2">
+          <li className="mx-1">
             <a
               className = "nav-buttons about-nav"
               data-testid="about"

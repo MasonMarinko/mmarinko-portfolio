@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Modal({onClose, currentPhoto}) {
-    const {name, url, category, description, index} = currentPhoto;
+    const {name, url, github, category, description, index} = currentPhoto;
   
     return (
       <div className="modalBackdrop">
@@ -11,9 +11,9 @@ function Modal({onClose, currentPhoto}) {
           <p className="description-header">Description:</p>
           <p className='description-text'>{description}</p>
           <div className='website-button flex-row'>
-          <a className="website" href={url} target="_blank">View Website</a>
+          <button className=" close-button" href={url} target="_blank">View Website</button>
+          <button className="close-button" href={github} target="_blank">View Github</button>
           </div>
-          <br/>
           <br/>
           <div className='close-button flex-row'>
                 <button onClick={onClose} type="button">

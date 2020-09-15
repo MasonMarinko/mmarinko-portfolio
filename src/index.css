@@ -36,7 +36,8 @@ main {
 }
 
 .website-button {
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .description-text {
@@ -52,7 +53,7 @@ main {
 
 .website {
   font-size: 30px;
-  color: #004ba8;
+  color: white;
   padding-top: 30px;
 }
 

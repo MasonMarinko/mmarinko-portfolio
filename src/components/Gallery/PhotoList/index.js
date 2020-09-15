@@ -5,105 +5,46 @@ const PhotoList = ({ category }) => {
 
     const [photos] = useState([
         {
-          name: 'Grocery aisle',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Media Collector',
+          category: 'projects',
+          url: "https://media-collector-project.herokuapp.com/",
+          description: 'In this project we created a way to easily store your movies and books. You also share and comment with others in the community!',
         },
         {
-          name: 'Grocery booth',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Media 4U',
+          category: 'projects',
+          url: 'https://ZQWhiting.github.io/media4u',
+          description: 'Want an easy way to search books and movies? Look no further Media 4U is here!',
         },
         {
-          name: 'Building exterior',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Run Buddy',
+          category: 'projects',
+          url: 'https://masonmarinko.github.io/runbuddy',
+          description: 'Created a website for workout company "Run Buddy"',
         },
         {
-          name: 'Restaurant table',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Scheduler',
+          category: 'projects',
+          url: 'https://masonmarinko.github.io/scheduler',
+          description: 'Create tasks based on time, this calendar will change color based on the time and whether it is on-time, past-time, or upcoming',
         },
         {
-          name: 'Cafe interior',
-          category: 'commercial',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Password Generator',
+          category: 'projects',
+          url: 'https://masonmarinko.github.io/password-generator',
+          description: 'After answering a few easy questions about the features of your password, this app will create a random and secure password for you!',
         },
         {
-          name: 'Cat green eyes',
-          category: 'portraits',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Green parrot',
-          category: 'portraits',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Yellow macaw',
-          category: 'portraits',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Pug smile',
-          category: 'portraits',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Pancakes',
-          category: 'food',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Burrito',
-          category: 'food',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Scallop pasta',
-          category: 'food',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Burger',
-          category: 'food',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Fruit bowl',
-          category: 'food',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Green river',
-          category: 'landscape',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Docks',
-          category: 'landscape',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Panoramic village by sea',
-          category: 'landscape',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Domestic landscape',
-          category: 'landscape',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-        },
-        {
-          name: 'Park bench',
-          category: 'landscape',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
+          name: 'Taskinator',
+          category: 'projects',
+          url: 'https://masonmarinko.github.io/taskinator',
+          description: 'Keep track of your daily tasks on this easy to use website that allows you to mark tasks as need to do, currently working on, or done!',
         },
       ]);
 
     
       const currentPhotos = photos.filter((photo) => photo.category === category);
-      
+
       const [currentPhoto, setCurrentPhoto] = useState();
 
       const [isModalOpen, setIsModalOpen] = useState(false);
@@ -116,10 +57,10 @@ const PhotoList = ({ category }) => {
     return (
         <div>
           {isModalOpen && <Modal currentPhoto={currentPhoto} onClose={toggleModal} />}
-            <div className="flex-row">
+            <div className="project-thumbnail flex-row">
                 {currentPhotos.map((image, i) => (
                     <img
-                    src={require(`../../../assets/small/${category}/${i}.jpg`)}
+                    src={require(`../../../assets/${category}/${i}.png`)}
                     alt={image.name}
                     className='img-thumbnail mx-1'
                     onClick={() => toggleModal(image, i)}

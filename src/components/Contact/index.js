@@ -31,8 +31,9 @@ function ContactForm() {
   }
   return (
     <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <h1 className="contact-title">Contact me</h1>
+      <form className = 'contact-form' id="contact-form" onSubmit={handleSubmit}>
+        <div className= "name-email">
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -42,7 +43,7 @@ function ContactForm() {
             name="name"
           />
         </div>
-        <div>
+        <div className="email">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
@@ -51,7 +52,8 @@ function ContactForm() {
             onBlur={handleChange}
           />
         </div>
-        <div>
+        </div>
+        <div className="message-box">
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
@@ -59,13 +61,15 @@ function ContactForm() {
             onBlur={handleChange}
             rows="5"
           />
+        </div>
           {errorMessage && (
-            <div>
+            <div className="error-message">
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
+            <div className="flex-row-submit">
+        <button className= "submit-button" type="submit">Submit</button>
         </div>
-        <button type="submit">Submit</button>
       </form>
     </section>
   );

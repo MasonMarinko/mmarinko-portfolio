@@ -3,13 +3,14 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer'
 
 function App() {
   const [contactSelected, setContactSelected] = useState(false);
   const [categories] = useState([
     {
-      name: 'Projects',
-      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+      name: 'projects',
+      description: 'Browse some of my previous work',
     },
   ]);
 
@@ -36,6 +37,7 @@ function App() {
 )}
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

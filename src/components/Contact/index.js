@@ -71,6 +71,10 @@ function ContactForm() {
         <button className= "submit-button" type="submit">Submit</button>
         </div>
       </form>
+      <div className="flex-row email">
+      <a className="email-address" href="mailto:Mason.P.Marinko@gmail.com">Email: Mason.P.Marinko@gmail.com</a>
+      <p className="phone">Phone Number: (707)-301-6690</p>
+      </div>
     </section>
   );
 }

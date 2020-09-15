@@ -104,6 +104,23 @@ main {
   text-shadow: 4px 4px 4px #000000;
 }
 
+.email {
+  display: flex;
+  justify-content: center;
+
+}
+
+.email-address {
+  font-size: 1.50rem;
+  padding-right: 70px;
+}
+
+.phone {
+  margin: 0;
+  font-size: 1.50rem;
+  color: #004ba8;
+}
+
 .name-email {
   display: flex;
   padding-bottom: 20px;

@@ -97,6 +97,12 @@ main {
   text-shadow: 4px 4px 4px #000000;
 }
 
+.resume-nav:hover {
+  color: #39a0ed;
+  border-bottom: 10px double #004ba8;
+  text-shadow: 4px 4px 4px #000000;
+}
+
 .name-email {
   display: flex;
   padding-bottom: 20px;
@@ -235,22 +241,22 @@ header a {
 
 .social-icons {
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .resume {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .github {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .linkedin {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .error-text {
@@ -491,8 +497,14 @@ a {
     border-bottom: 10px double #efe9e7;
     text-shadow: 0 0 0;
   }
-  
+
   .contact-nav:hover {
+    color: #39a0ed;
+    border-bottom: 10px double #efe9e7;
+    text-shadow: 0 0 0;
+  }
+  
+  .resume-nav:hover {
     color: #39a0ed;
     border-bottom: 10px double #efe9e7;
     text-shadow: 0 0 0;

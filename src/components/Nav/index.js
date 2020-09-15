@@ -17,7 +17,7 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a class="page-title" data-testid="link" href="https://github.com/masonmarinko">
+        <a className="page-title" data-testid="link" href="https://github.com/masonmarinko">
           <span role="img" aria-label="camera">
             {" "}
           </span>{" "}
@@ -36,7 +36,7 @@ function Nav(props) {
               About Me
             </a>
           </li>
-          <li className={`mx-2 ${contactSelected && "navActive"}`}>
+          <li className={`mx-1 ${contactSelected && "navActive"}`}>
             <span className= "nav-buttons contact-nav" onClick={() => setContactSelected(true)}>Contact</span>
           </li>
                     {categories.map((category) => (
@@ -59,6 +59,11 @@ function Nav(props) {
               </span>
             </li>
           ))}
+          <li className="mx-1">
+          <a className="nav-buttons about-nav" target= "_blank" href="https://docs.google.com/document/d/1azzpUd0hBnXtuGDOOkl5xZMQx0bgtK04a-33nAHLQPc/edit?usp=sharing">
+            Resume
+      </a>
+          </li>
         </ul>
       </nav>
     </header>

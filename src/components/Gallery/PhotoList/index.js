@@ -19,6 +19,13 @@ const PhotoList = ({ category }) => {
           description: 'Want an easy way to search books and movies? Look no further Media 4U is here!',
         },
         {
+          name: 'Small Show',
+          category: 'projects',
+          github: "https://github.com/1hoppy1/small-show",
+          url: 'https://small-show-group-project.herokuapp.com/',
+          description: "Tired of not being seen on the main page of Twitch because you're a smaller streamer? Fear not! Small Show is here to get you recognized!",
+        },
+        {
           name: 'Run Buddy',
           category: 'projects',
           github: "https://www.github.com/masonmarinko/runbuddy",
